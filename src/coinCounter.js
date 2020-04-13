@@ -19,8 +19,8 @@ export const coinChange = (cents) => {
   let nickel = Math.floor(cents/5);
   cents -= 5*nickel
   let penny = cents;
-  console.log('Quarters: ${quarter}, Dimes: ${dime}, Nickels: ${nickel}, Pennies: ${penny}');
-  return ('Quarters: ${quarter}, Dimes: ${dime}, Nickels: ${nickel}, Pennies: ${penny}');
+  const response = [quarter, dime, nickel, penny];
+  return response;
 };
 
 
